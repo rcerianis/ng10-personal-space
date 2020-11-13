@@ -1,0 +1,6 @@
+<div *ngIf="!currentUser">
+    <button mat-button color="primary" (click)="loginWithGoogle()">Se connecter avec Google</button>
+</div>
+<div *ngIf="currentUser">
+    <button mat-button color="primary" (click)="signOut()">Se déconnecter</button>
+</div>
